@@ -1,7 +1,11 @@
-const Footer = () => {
-  return (
-    <div className=''>Footer</div>
-  )
-}
+import Container from "./Container";
 
-export default Footer
+const Footer = () => {
+    return (
+        <footer>
+            <Container>Footer</Container>
+        </footer>
+    );
+};
+
+export default Footer;
