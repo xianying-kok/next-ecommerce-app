@@ -1,17 +1,15 @@
 import { cn } from "@/lib/utils";
-import Image from "next/image";
 import Link from "next/link";
 
 interface Props {
   className? : string;
-  width?: number;
-  height?: number;
+  children:  React.ReactNode;
 }
 
-const Logo = ({ className, width = 90, height = 50}: Props ) => {
+const Logo = ({ className, children}: Props ) => {
     return (
         <Link href={"/"}>
-            <Image src={'./next.svg'} alt="Tulos" width={width} height={height} className={cn(className, ['w-[80px] md:w-[80px]'])} />
+            <h2 className={cn(className, "text-2xl text-darkColor font-black tracking-wider uppercase")}>{children}</h2>
         </Link>
     );
 };
